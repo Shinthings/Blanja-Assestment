@@ -1,0 +1,253 @@
+body{
+	font-family: "Helvetica";
+	font-weight: 400;
+	background-color: rgb(248, 248, 248);
+}
+
+.loadingContainer{
+	position: fixed;
+	left: 46%;
+	top: 0%;
+}
+
+.loading{
+	width: 70px;
+	height: 70px;
+}
+
+.container{
+	margin-top: 1px;
+	padding: 0px 100px;
+}
+
+.personContainer{
+	height: 25px;
+	border-left: 5px solid rgb(224, 37, 40);
+}
+
+.person{
+	margin-left: 30px;
+	font-size: 22px;
+	letter-spacing: 3px;
+	font-weight: 800;
+	color: rgb(66, 66, 66);
+}
+
+.detailContainer{
+	margin-top: 20px;
+	background-color: rgb(40, 40, 40);
+	padding: 5px 10px;
+	display: -webkit-flex; /* Safari */
+    -webkit-justify-content: flex-start; /* Safari 6.1+ */
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.photo{
+	background-color: rgb(102,102,102);
+	border-radius: 3px;
+	height: 150px;
+	width: 120px;
+	margin: 30px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.info{
+	margin: 30px 20px;
+}
+
+.info table tr{
+	height: 25px;
+}
+
+.info table td{
+	color: white;
+}
+
+.info .value{
+	padding-left: 30px;
+}
+
+.movieContainer{
+	display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-between; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.movieContainer .left{
+	width: 65%;
+}
+
+.movieContainer .left .head{
+	display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-between; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-between;
+}
+
+.movieContainer .left .head .title{
+	color: rgb(232, 59, 47);
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.movieContainer .left .head .option{
+	color: rgb(91, 182, 194);
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.movieContainer .left .body{
+	margin-top: 10px;
+	display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-between; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.movieContainer .left .body .item{
+	background-color: white;
+	height: 240px;
+	width: 23%;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.movieContainer .left .play{
+	height: 80px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.movieContainer .left .content{
+	height: 160px;
+	border-left: solid 2px rgb(215, 215, 215);
+	border-right: solid 2px rgb(215, 215, 215);
+	border-bottom: solid 2px rgb(215, 215, 215);
+	padding: 1px 10px;
+	border-radius: 0px 0px 4px 4px;
+}
+
+.movieContainer .left .content .title{
+	text-overflow: ellipsis; 
+	overflow: hidden; 
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgb(66, 66, 66);
+}
+
+.movieContainer .left .content .detail{
+	margin:0px;
+	color: rgb(121, 121, 121);
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.purple{
+	background-color: rgb(93, 53, 135);
+}
+
+.orange{
+	background-color: rgb(231, 91, 48);
+}
+
+.movieContainer .right{
+	width: 30%;
+}
+
+.movieContainer .right label{
+	color: rgb(232, 59, 47);
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.movieContainer .right .body{
+	margin-top: 10px;
+	border: 1px solid rgb(215, 215, 215);
+}
+
+.movieContainer .right .body .head{
+	background-color: rgb(51, 51 ,51);
+	color: white;
+	padding: 10px;
+}
+
+.movieContainer .right .body .head label{
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.movieContainer .right table{
+	margin-top: 10px;
+	color: white;
+	font-size: 14px;
+}
+
+.movieContainer .right .body .desc{
+	background-color: white;
+	color: rgb(121, 121, 121);
+	padding: 10px;
+}
+
+.movieContainer .right .body .desc p {
+	display: block; /* Fallback for non-webkit */
+    display: -webkit-box;
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.6;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movieContainer table tr{
+	width: 100%;
+}
+
+.movieContainer table .col1{
+	width: 40%;
+	vertical-align: top;
+}
+.movieContainer table .col2{
+}
+.movieContainer .linkContainer {
+	margin: 10px 0px;
+    text-align: right;
+}
+.link{
+	text-decoration: none;
+	color: rgb(91, 182, 194);
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-72 { font-size: 72px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }

@@ -1,0 +1,29 @@
+﻿<html ng-app="App">
+<head>
+    <title>Test Blanja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://www.fontsaddict.com/fontface/latha.ttf' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+</head>
+<body ng-controller="MainCtrl">
+    <div class="loadingContainer">
+        <img ng-if="app.isLoading" class="loading" src="image/loading.gif"  />
+    </div>
+    <ui-view></ui-view>
+    
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/angular-ui-router.min.js"></script>
+
+    <script src="js/local/app.js"></script>
+    
+
+    <!-- Controller --> 
+    <script src="js/local/controller/home.js"></script>
+   
+
+   <!-- Service --> 
+   <script src="js/local/service/people.js"></script>
+
+</body>
+</html>

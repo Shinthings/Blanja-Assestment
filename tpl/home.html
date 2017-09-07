@@ -1,0 +1,92 @@
+<div class="container">
+	<div class="personContainer">
+		<p class="person">{{data.name}}</p>
+	</div>
+	<div class="detailContainer">
+		<div class="photo">
+			<i class="material-icons md-72 md-light">person_outline</i>
+		</div>
+		<div class="info">
+			<table>
+				<tr>
+					<td>Height:</td>
+					<td class="value">{{data.height}}cm</td>
+				</tr>
+				<tr>
+					<td>Mass:</td>
+					<td class="value">{{data.hair_color | capitalize}}</td>
+				</tr>
+				<tr>
+					<td>Hair Color:</td>
+					<td class="value">{{data.skin_color | capitalize}}</td>
+				</tr>
+				<tr>
+					<td>Skin Color:</td>
+					<td class="value">{{data.eye_color | capitalize}}</td>
+				</tr>
+				<tr>
+					<td>Birth Year:</td>
+					<td class="value">{{data.created | date : "dd MMMM yyyy"}}</td>
+				</tr>
+				<tr>
+					<td>Gender:</td>
+					<td class="value">{{data.gender | capitalize}}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="movieContainer">
+		<div class="left">
+			<div class="head">
+				<label class="title">Skywalker Movie's</label>
+				<label class="option">See More</label>
+			</div>
+			<div class="body">
+				<div class="item" ng-repeat="x in data.detailFilms track by $index" ng-if="$index<4">
+					<div class="play {{$index%2==0? 'purple':'orange'}}">
+						<i class="material-icons md-48 md-light">play_circle_outline</i>
+					</div>
+					<div class="content">
+						<p class="title">{{x.title}}</p>
+						<p class="detail">Director:</p>
+						<p class="detail">{{x.director}}</p>
+						<br />
+						<p class="detail">Release:</p>
+						<p class="detail">{{x.release_date}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="right">
+			<label>Related Another's Movies</label>
+			
+			<div class="body">
+				<div class="head">
+					<label>{{data.detailFilms[4].title}}</label>
+					<table>
+						<tr>
+							<td class="col1">Director:</td>
+							<td class="col2">{{data.detailFilms[4].director}}</td>
+						</tr>
+						<tr>
+							<td>Producer:</td>
+							<td>{{data.detailFilms[4].producer}}</td>
+						</tr>
+						<tr>
+							<td>Release Date:</td>
+							<td>{{data.detailFilms[4].release_date}}</td>
+						</tr>
+					</table>
+				</div>
+				<div class="desc">
+					<p>{{data.detailFilms[4].opening_crawl}}</p>
+					<div class="linkContainer">
+						<a class="link">See More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
